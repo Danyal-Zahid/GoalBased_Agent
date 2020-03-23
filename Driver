@@ -1,0 +1,26 @@
+MNT = input().split(' ')
+M = int(MNT[0])
+N = int(MNT[1])
+T = int(MNT[2])
+
+states = []
+actions = []
+
+input()
+for i in range(M):
+    states.append(input())
+
+input()
+for i in range(N):
+    actions.append(input())
+
+input()
+
+transitionTable = []
+for i in range(M):
+    temp = input().split(' ')
+    transitionTable.append([])
+    for j in range(N):
+        transitionTable[i].append(int(temp[j]))
+
+
