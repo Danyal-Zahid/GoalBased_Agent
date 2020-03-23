@@ -29,4 +29,3 @@ input()
 testCases = []
 for i in range(T):
     testCases.append(input().split('\t'))
-
