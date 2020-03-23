@@ -29,3 +29,5 @@ input()
 testCases = []
 for i in range(T):
     testCases.append(input().split('\t'))
+
+print(states.index(testCases[0][0])) #To get index in a list
