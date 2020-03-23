@@ -1,3 +1,4 @@
+from Node import Node
 MNT = input().split(' ')
 M = int(MNT[0])
 N = int(MNT[1])
@@ -23,4 +24,9 @@ for i in range(M):
     for j in range(N):
         transitionTable[i].append(int(temp[j]))
 
+input()
+
+testCases = []
+for i in range(T):
+    testCases.append(input().split('\t'))
 
