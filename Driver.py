@@ -70,18 +70,21 @@ def start():
     for test in testCases:
         initial_state = states.index(test[0])
         goal_state = states.index(test[1])
-        result = Breadth_First_Search(initial_state, goal_state)
-        #Test
-        #print(result.action, result.parent, result.state, result.cost)
-        #EndTest
-        if result is None:
-            print("No Solution Exists")
+        if initial_state == goal_state:
+            print("Initial State is the Goal state, so just chill...")
         else:
-            stack = []
-            while result.action != -1:
-                stack.append(actions[result.action])
-                result = result.parent
-            print_result(stack)
+            result = Breadth_First_Search(initial_state, goal_state)
+            # Test
+            # print(result.action, result.parent, result.state, result.cost)
+            # EndTest
+            if result is None:
+                print("No Solution Exists")
+            else:
+                stack = []
+                while result.action != -1:
+                    stack.append(actions[result.action])
+                    result = result.parent
+                print_result(stack)
 
 
 def print_result(stack):

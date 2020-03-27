@@ -1,4 +1,4 @@
 MoveToRoom2 -> Clean -> MoveToRoom1
 Clean -> MoveToRoom2 -> Clean
 No Solution Exists
-
+Initial State is the Goal state, so just chill...
