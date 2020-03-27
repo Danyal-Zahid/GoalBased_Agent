@@ -1,4 +1,4 @@
-8 3 4
+8 3 5
 
 (AgentInRoom1, Room1Dusty, Roam2Dusty)
 (AgentInRoom1, Room1Dusty, Roam2Clean)
@@ -26,3 +26,4 @@ MoveToRoom2
 (AgentInRoom1, Room1Dusty, Roam2Dusty)	(AgentInRoom2, Room1Clean, Roam2Clean)
 (AgentInRoom1, Room1Clean, Roam2Dusty)	(AgentInRoom2, Room1Dusty, Roam2Dusty)
 (AgentInRoom1, Room1Clean, Roam2Dusty)	(AgentInRoom1, Room1Clean, Roam2Dusty)
+(AgentInRoom1, Room1Dusty, Roam2Dusty)	(AgentInRoom1, Room1Clean, Roam2Clean)
