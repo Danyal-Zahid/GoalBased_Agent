@@ -4,3 +4,5 @@ Language:
 	Python 3.8.1
 IDE:
 	PyCharm 2019.3.2
+Run on command line using:
+	python Driver.py <input.txt >output.txt
