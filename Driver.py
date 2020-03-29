@@ -1,5 +1,5 @@
 from Node import Node
-import queue
+
 #Grobal Declarations
 states = []
 actions = []
@@ -60,14 +60,15 @@ def take_input():
         transitionTable.append([])
         for j in range(N):
             transitionTable[i].append(int(temp[j]))
-    input()
-    for i in range(T):
-        testCases.append(input().split('\t'))
-    #print(testCases)
+    # input()
+    # for i in range(T):
+    #     testCases.append(input().split('\t'))
 
 
 def start():
-    for test in testCases:
+    input()
+    for i in range(T):
+        test = input().split('\t')
         initial_state = states.index(test[0])
         goal_state = states.index(test[1])
         if initial_state == goal_state:
@@ -95,6 +96,6 @@ def print_result(stack):
     print('')
 
 
-# Function Callings
+# Function Calls
 take_input()
 start()
